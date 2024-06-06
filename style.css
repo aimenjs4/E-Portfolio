@@ -413,6 +413,13 @@ span {
   margin: 0.7rem 0 0.4rem;
 }
 
+.email-box {
+  margin-top: 20px; /* Adjust margin */
+}
+
+/* Other CSS styles for footer and email box remain unchanged */
+
+
 .email-box:hover h3 {
   color: #fff;
 }
@@ -460,7 +467,7 @@ span {
   margin: 0; /* Reset margin if needed */
 }
 
-.email-link:hover h3 {
+.email-link:hover h3 {  
   color: fff; /* Color on hover */
 }
 
@@ -703,3 +710,55 @@ form textarea {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px 10%; /* Adjust padding */
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+footer .logo span {
+  font-size: 0.9rem; /* Adjust font size */
+  font-weight: 600;
+  color: crimson;
+}
+
+footer .navbar {
+  display: flex;
+}
+
+footer .navbar li {
+  display: inline;
+  margin-right: 10px; /* Adjust margin */
+}
+
+footer .navbar a {
+  font-size: 0.8rem; /* Adjust font size */
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer .navbar a:hover {
+  color: var(--hover);
+}
+
+#menu-icon {
+  font-size: 20px; /* Adjust font size */
+  cursor: pointer;
+}
+
+/* Add any additional styling as needed */
