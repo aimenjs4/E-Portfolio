@@ -31,20 +31,40 @@
 
     <!-- Home Section Start -->
     <section class="home" id="home">
-        <div class="social">
-    
-        </div>
+        <div class="social"></div>
         <div class="home-img">
             <img src="MainPicPort.png" alt="Profile Picture">
         </div>
         <div class="home-text">
             <span>I'm</span>
-            <h1>Aimen Labidi</h1>
-            
+            <h1><span id="typewriter"></span></h1>
             <p>Currently <br> Education in Platform Development in Switzerland <br> Basel</p>
             <a href="#contact" class="btn">Contact</a>
         </div>
     </section>
+    
+    <script>
+        // Typewriter effect
+        const text = "Aimen Labidi"; // Text to be displayed
+let index = 0;
+
+function typewriter() {
+    if (index < text.length) {
+        // Check if the current character is a space
+        if (text[index] === " ") {
+            // If it's a space, add a non-breaking space
+            document.getElementById('typewriter').innerHTML += "&nbsp;";
+        } else {
+            // If it's not a space, add the character
+            document.getElementById('typewriter').innerText += text.charAt(index);
+        }
+        index++;
+        setTimeout(typewriter, 300); // Adjust typing speed here
+    }
+}
+
+typewriter();
+    </script>
     <!-- Home Section End -->
 
     <!-- About Section Start -->
@@ -59,7 +79,7 @@
                 <img src="MainPicPort.png" alt="Profile Picture">
             </div>
             <div class="about-text">
-                <p>My name is Aimen, 18 years old and currently working in computer science, and training as a application developer. I am learning and using HTML, CSS, Python a touch of JavaScript and Swift.</p>
+                <p>My name is Aimen, 18 years old and currently working in computer science, and training as a platform and application developer. I am learning and using HTML, CSS, Python a touch of JavaScript and Swift.</p>
 
                 <div class="information">
                     <div class="info-box">
@@ -98,8 +118,8 @@
                 <h3>System Engineering</h3>
             </div>
             <div class="services-box">
-                <i class='bx bxs-file-doc'></i>
-                <h3>Project Planning</h3>
+                <i class='bx bxs-data'></i>
+                <h3>Mysql</h3>
             </div>
 
             <div class="services-box">
