@@ -374,6 +374,7 @@ span {
 @media (max-width: 200px) {
   .email-box {
     width: 80px; /* Adjust for smaller screens */
+    
   }
 }
 
@@ -396,6 +397,7 @@ span {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 40px;
   border-radius: 0.5rem;
   border-bottom: 2px solid var(--main-color);
   box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
@@ -706,6 +708,7 @@ form textarea {
   animation: blink 0.7s infinite alternate; /* Make it blink */
 }
 
+
 @keyframes blink {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -762,3 +765,261 @@ footer .navbar a:hover {
 }
 
 /* Add any additional styling as needed */
+
+home-text span {
+  font-size: var(--medium-font);
+  font-weight: 500;
+}
+
+.project1-text h1 {
+  font-size: var(--big-font);
+  text-align: right;
+  width: 200px;
+}
+
+.project1-text h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.project1-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+
+.project1-img {
+  order: 3;
+}
+
+.project1-img img {
+  width: 230px;
+  height: auto;
+  margin-top: 30%;
+  position: absolute;
+  top: -90px; /* Adjust this value as needed */
+  right: 210px; /* Adjust this value as needed */
+  z-index: 1; /* Ensure the GIF is above other elements */
+  animation: playGif 20s steps(20) infinite; /* Adjust duration (12s) and steps (20) as needed */
+}
+
+
+home-text span {
+  font-size: var(--medium-font);
+  font-weight: 500;
+}
+
+.project2-text h1 {
+  font-size: var(--big-font);
+  text-align: right;
+  width: 200px;
+}
+
+.project2-text h2 {
+  font-size: 30px;
+  
+}
+
+.project2-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+.project2-img img {
+  width: 100%;
+  height:auto;
+  border-radius: 0.5rem;
+  text-align: lefta;
+  margin-bottom: 98px;
+}
+
+
+.project3-text {
+  width: 75%; /* Adjust this value based on your layout */
+  float: left; /* Float the text container */
+}
+
+.project3-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin:5rem 0; /* Adjust top and bottom margin */
+}
+
+.project3-img img {
+  float: right;
+  width: 22%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-left: 2%; /* Add some space between the image and text */
+  margin-bottom: 60px;
+  top: 20px; /* Adjust this value to move the image up or down */
+}
+
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading span {
+  font-size: var(--p-font);
+  color: rgb(2, 166, 70);
+}
+
+.cat-gif {
+  width: 60px;
+  height: auto;
+  margin-top: 2%;
+  position: absolute;
+  top: 648px; /* Adjust this value as needed */
+  right: 1130px; /* Adjust this value as needed */
+  z-index: 1; /* Ensure the GIF is above other elements */
+
+}
+
+
+
+.swift-image {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Full viewport height to center vertically */
+}
+
+.top {
+  height: auto;
+  width: 90px;
+  text-decoration: none;
+  padding: 100px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+
+  /* Center the button horizontally */
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 200px) {
+  .back-box {
+    width: 80px; /* Adjust for smaller screens */
+    
+  }
+}
+
+/* Responsive design for service boxes */
+.back-content {
+  display: grid;
+  width: 250;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.back-box {
+    padding: 5px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    transition: transform 0.3s ease;
+    margin-top: 10px; /* Adjusted margin */
+
+  
+  /* Other CSS styles remain unchanged */
+  
+}
+
+.back-box:hover {
+  background-color: #02225a;
+  transform: scale(1.1); /* Make the box 10% larger on hover */
+}
+
+.back-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+}
+
+.back-box {
+  margin-top: 20px; /* Adjust margin */
+}
+
+/* Other CSS styles for footer and email box remain unchanged */
+
+
+.back-box:hover h3 {
+  color: #fff;
+}
+
+.back-box .bx {
+  padding-top: 2rem;
+  font-size: 54px;
+  color: var(--main-color);
+}
+
+.back-box:hover .bx {
+  color: #22cf91;
+}
+
+.back-box a {
+  color: var(--main-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+}
+
+.back-box:hover a {
+  color: #8b8a8f;
+}
+
+.back-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.back-box{
+  max-width: 50%;
+  height: auto;
+}
+
+.back-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.back-link h3 {
+  color: var(--text-color); /* Use a variable or a specific color */
+  margin: 0; /* Reset margin if needed */
+}
+
+.back-link:hover h3 {  
+  color: fff; /* Color on hover */
+}
+
+.CodPic-img img {
+  width: 100%;
+  height:auto;
+  border-radius: 0.5rem;
+  text-align: lefta;
+  margin-bottom: 98px;
+}
