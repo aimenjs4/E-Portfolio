@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .top-container {
+            display: flex;
+            justify-content: center;  /* Centers horizontally */
+            align-items: center;      /* Centers vertically */
+            height: 100vh;            /* Full viewport height to center vertically */
+        }
+        .top {
+            text-decoration: none;
+            padding: 10px;
+            font-family: sans-serif;
+            color: #fff;
+            background: #000;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section Start -->
+    <header>
+        <a href="#" class="logo">My <span>Projects</span>.</a>
+        <img src="CatGif.gif" alt="" class="cat-gif">
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Final School Project</a></li>
+            <li><a href="#about">E-Portfolio Project</a></li>
+            <li><a href="#services">Swift Project</a></li>
+            <li><a href="index.html">Back to Main</a></li>
+        </ul>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="social"></div>
+        <div class="project1-img">
+            <img src="CodGif.gif" alt="Profile Picture">
+        </div>
+        <div class="home-text">
+            <h1><span id="typewriter"></span></h1>
+            <div class="project1-text"></div>
+            <p>For my school final thesis, I designed and built a PC in the shape of a pyramid. Additionally, I coded a website to showcase the unique design and functionality of the PC. That's how I got into coding.</p>
+        </div>
+
+        <script>
+            // Typewriter effect
+            const text = "My personal Projects"; // Text to be displayed
+            let index = 0;
+    
+            function typewriter() {
+                if (index < text.length) {
+                    // Check if the current character is a space
+                    if (text[index] === " ") {
+                        // If it's a space, add a non-breaking space
+                        document.getElementById('typewriter').innerHTML += "&nbsp;";
+                    } else {
+                        // If it's not a space, add the character
+                        document.getElementById('typewriter').innerText += text.charAt(index);
+                    }
+                    index++;
+                    setTimeout(typewriter, 100); // Adjust typing speed here
+                }
+            }
+    
+            typewriter();
+        </script>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="project2-text">
+           <h2>My Website {/}</h2>
+        </div>
+        <div class="about-container">
+            <div class="project2-img">
+                <img src="project2.png" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <p>For an overview of my career, I coded a website to showcase my experiences, skills, and projects. I opted for a simple and modern design inspired by Apple. The website, originally coded in VSCode using HTML, CSS, and JavaScript, is hosted on a GitHub repository.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Current Swift Project</h2>
+            <img src="Swift.png" alt="Swift Project Image" class="swift-image">
+        </div>
+        <div class="project3-img">
+            <img src="project3.png" alt="Profile Picture">
+        </div>
+        <div class="project3-text">
+            <p>I'm currently developing an iOS app using Swift that functions similarly to a calendar but with added features such as task management and push notifications. The app aims to provide users with a seamless experience for organizing their schedules and receiving timely reminders.</p>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <footer>
+        <a href="#" class="logo">Aimen Labidi <span>Made with VSCode</span>.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar"> </ul>
+    </footer>
+    
+    <!-- Button Section Start -->
+    <section id="contact">
+        </div>
+        <div class="heading"></div>
+            <div class="back-box">
+            <a href="#home"> <!-- Anchor link to the top section -->
+                <i class='bx bx-up-arrow-alt'></i>
+                <h3>Go Back Up</h3>
+            </a>
+        </div>
+        
+        </div>
+    <!-- Button Section End -->
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
