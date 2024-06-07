@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <title>E-Portfolio and History</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
-
 <body>
-    <!-- Navbar Section Start -->
+    <!-- Header Section -->
     <header>
         <a href="#" class="logo">Portfolio <span>And</span> <span>History</span>.</a>
-
+        <img src="CatGif.gif" alt="" class="cat-gif">
         <div class="bx bx-menu" id="menu-icon"></div>
-
+        <!-- Navbar -->
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -27,66 +24,59 @@
             <li><a href="404.html">00111111</a></li>
         </ul>
     </header>
-    <!-- Navbar Section End -->
-
-    <!-- Home Section Start -->
+    <!-- Home Section -->
     <section class="home" id="home">
+        <!-- Home Content -->
         <div class="social"></div>
         <div class="home-img">
             <img src="MainPicPort.png" alt="Profile Picture">
         </div>
         <div class="home-text">
-            <span>I'm</span>
             <h1><span id="typewriter"></span></h1>
             <p>Currently <br> Education in Platform Development in Switzerland <br> Basel</p>
-            <a href="#contact" class="btn">Contact</a>
+            <a href="projects.html" class="btn">My Projects</a>
         </div>
     </section>
-    
+    <!-- Typewriter Effect Script -->
     <script>
-        // Typewriter effect
-        const text = "Aimen Labidi"; // Text to be displayed
-let index = 0;
-
-function typewriter() {
-    if (index < text.length) {
-        // Check if the current character is a space
-        if (text[index] === " ") {
-            // If it's a space, add a non-breaking space
-            document.getElementById('typewriter').innerHTML += "&nbsp;";
-        } else {
-            // If it's not a space, add the character
-            document.getElementById('typewriter').innerText += text.charAt(index);
+        const text = "Aimen Labidi";
+        let index = 0;
+        function typewriter() {
+            if (index < text.length) {
+                if (text[index] === " ") {
+                    document.getElementById('typewriter').innerHTML += "&nbsp;";
+                } else {
+                    document.getElementById('typewriter').innerText += text.charAt(index);
+                }
+                index++;
+                setTimeout(typewriter, 300);
+            }
         }
-        index++;
-        setTimeout(typewriter, 300); // Adjust typing speed here
-    }
-}
-
-typewriter();
+        typewriter();
     </script>
-    <!-- Home Section End -->
-
-    <!-- About Section Start -->
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
             <span>Introduction</span>
         </div>
-
+        <!-- About Content -->
         <div class="about-container">
             <div class="about-img">
                 <img src="MainPicPort.png" alt="Profile Picture">
             </div>
             <div class="about-text">
                 <p>My name is Aimen, 18 years old and currently working in computer science, and training as a platform and application developer. I am learning and using HTML, CSS, Python a touch of JavaScript and Swift.</p>
-
+                <!-- Information -->
                 <div class="information">
                     <div class="info-box">
                         <i class='bx bxs-user'></i>
                         <span>Aimen Labidi</span>
                     </div>
-
+                    <div class="info-box">
+                        <i class='bx bxs-home-heart'></i>
+                        <span>Switzerland</span>
+                    </div>
                     <div class="info-box">
                         <i class='bx bxs-envelope'></i>
                         <a href="mailto:aimen.labidi@gmx.ch">
@@ -94,25 +84,23 @@ typewriter();
                         </a>
                     </div>
                 </div>
+                <!-- Download CV Button -->
                 <a href="MainCV.pdf" class="btn" download>Download CV</a>
             </div>
         </div>
     </section>
-    <!-- About Section End -->
-
-    <!-- Skills Section Start -->
+    <!-- Experience and Skills Section -->
     <section class="services" id="services">
         <div class="heading">
             <h2>Experiences</h2>
-            <span>and skills    </span>
+            <span>and skills</span>
         </div>
+        <!-- Services Content -->
         <div class="services-content">
-
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
             </div>
-
             <div class="services-box">
                 <i class='bx bx-server'></i>
                 <h3>System Engineering</h3>
@@ -121,48 +109,41 @@ typewriter();
                 <i class='bx bxs-data'></i>
                 <h3>Mysql</h3>
             </div>
-
             <div class="services-box">
                 <i class='bx bxl-apple'></i>
                 <h3>iOS App Development</h3>
             </div>
         </div>
     </section>
-    <!-- Skills Section End -->
-    
-    <!-- Contact Section Start -->
+    <!-- Contact Section -->
     <section id="contact">
         <div class="heading">
             <h2>Contact Me</h2>
             <span>Get in Touch</span>
         </div>
+        <!-- Contact Content -->
         <div class="contact-content">
             <div class="heading">
                 <p>If you have any questions or need further assistance, please reach me at:</p>
+                <!-- Email Link -->
                 <div class="email-content">
-
-
-                <a href="mailto:aimen.labidi@gmx.ch" class="email-link">
-                    <div class="email-box">
-                        <i class='bx bxs-envelope'></i>
-                        <h3>Contact Me</h3>
-                    </div>
-                </a>
+                    <a href="mailto:aimen.labidi@gmx.ch" class="email-link">
+                        <div class="email-box">
+                            <i class='bx bxs-envelope'></i>
+                            <h3>Contact Me</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-    
+    <!-- Footer Section -->
     <footer>
         <a href="#" class="logo">Aimen Labidi <span>Made with VSCode</span>.</a>
         <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar"> </ul>
+        <ul class="navbar"></ul>
     </footer>
-    
-    
-
-    <!-- Javascript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
-
 </html>
